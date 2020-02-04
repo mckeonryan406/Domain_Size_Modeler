@@ -1,4 +1,4 @@
-###INVERSE DOMAIN SEARCH FOR MDD ANALYSIS
+## INVERSE DOMAIN SEARCH FOR MDD ANALYSIS
 
 Created By: Ryan McKeon 
 Date: 10 March 2017 
@@ -18,7 +18,7 @@ Contact: [ryan.e.mckeon@dartmouth.edu](mailto:ryan.e.mckeon@dartmouth.edu)
 
 
 
-####QUICK START GUIDE
+#### QUICK START GUIDE
 
 1. Use one of the example files from our Michigan Hematite samples published in Farley and McKeon 2015 - Geology that are included with the code.
 2. Fire up Domain_Model_MASTER.m and run it as a script!! Hit the green play botton and watch the Command Window for instructions. This is hard wired to start with MI43d2.EXAMPLE.txt -- this is a good place to start.
@@ -38,29 +38,29 @@ This code uses the Bayesian Information Criterion (BIC) (calcualted in master_do
 #### Inputs and Outputs:
 
 Inputs: obs_data_file = observed data array - Defined Above! 
-	col 1 = step # 
-	col 2 = Temp (deg C) 
-	col 3 = time (hr) 
-	col 4 = Fcum observed
+- col 1 = step # 
+- col 2 = Temp (deg C) 
+- col 3 = time (hr) 
+- col 4 = Fcum observed
 
 Outpus: generates an Excel file called "modeled_data_OUT.xls", which stores the results from the model iteration with the lowest BIC score for the whole modeling session. I.E. if you try a wide range of differnt numbers of domains, only one single combination of goodness of fit with allowed complexity will be saved. This file has the following structure:
 
-row 1 = misfit score, BIC (bayesian information criterion), ndomains, Ea, lnDo/a2, slope 
-row 2 = Gas fraction of each domain modeled 
-row 3 = Relative domain size for each domain modeled 
-row 4 = log(Do/a2) for each domain --> for input to QtQT 
-row 5 = closure temperature for each domain (assuming a 10 degC/Ma cooling rate) 
-row 6 - n:
-	col 1 = step number 
-	col 2 = Temp (deg C) 
-	col 3 = time (hr) 
-	col 4 = Fcum modeled 
-	col 5 = 10000/K 
-	col 6 = lnDa2 modeled 
-	col 7 = delta modeled --> ln(r/ro) in Lovera-speak 
-	col 8 = delta OBSERVED --> included for plotting comparison 
-	col 9 = lnDa2 OBSERVED --> included for plotting 
-	col 10 = Fcum OBSERVED --> included for plotting
+- row 1 = misfit score, BIC (bayesian information criterion), ndomains, Ea, lnDo/a2, slope 
+- row 2 = Gas fraction of each domain modeled 
+- row 3 = Relative domain size for each domain modeled 
+- row 4 = log(Do/a2) for each domain --> for input to QtQT 
+- row 5 = closure temperature for each domain (assuming a 10 degC/Ma cooling rate) 
+- row 6 - n:
+>> - col 1 = step number 
+>> - col 2 = Temp (deg C) 
+>> - col 3 = time (hr) 
+>> - col 4 = Fcum modeled 
+>> - col 5 = 10000/K 
+>> - col 6 = lnDa2 modeled 
+>> - col 7 = delta modeled --> ln(r/ro) in Lovera-speak 
+>> - col 8 = delta OBSERVED --> included for plotting comparison 
+>> - col 9 = lnDa2 OBSERVED --> included for plotting 
+>> - col 10 = Fcum OBSERVED --> included for plotting
 
 Also generates plots -- The running Delta plot shows the progress of each iteration as the fit is improved. At the conclusion of the code, a pdf with plots of Delta (model vs. observed), arrhenius data (observed with modeled and reference domains of 100 nm, 10 um, and 1 mm radius) and a comparison of best BIC scores for different numbers of domains are saved as "domain_model_plots.pdf".
 
