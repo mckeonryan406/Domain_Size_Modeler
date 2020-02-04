@@ -1,4 +1,4 @@
- ##INVERSE DOMAIN SEARCH FOR MDD ANALYSIS 
+###INVERSE DOMAIN SEARCH FOR MDD ANALYSIS
 
 Created By: Ryan McKeon 
 Date: 10 March 2017 
@@ -15,6 +15,7 @@ Contact: [ryan.e.mckeon@dartmouth.edu](mailto:ryan.e.mckeon@dartmouth.edu)
 #### UPDATES
 
 **27 August 2018**: Added physical domain size output and fixed bugs --> Using newly published kinetics for helium diffusion from hematite from Farley 2018 GCA, the code now estimates the physical size of the modeled domains.  Bug fixes addessed issues with final plots and domain size calculation.
+
 
 
 ####QUICK START GUIDE
