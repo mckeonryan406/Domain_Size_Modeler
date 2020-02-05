@@ -20,11 +20,12 @@ Contact: [ryan.e.mckeon@dartmouth.edu](mailto:ryan.e.mckeon@dartmouth.edu)
 
 #### QUICK START GUIDE
 
-1. Use one of the example files from our Michigan Hematite samples published in Farley and McKeon 2015 - Geology that are included with the code.
-2. Fire up Domain_Model_MASTER.m and run it as a script!! Hit the green play botton and watch the Command Window for instructions. This is hard wired to start with MI43d2.EXAMPLE.txt -- this is a good place to start.
-3. When prompted for kinetics info, enter "1" (no quotes) to regress steps from the Arrhenius plot, then enter "9 11 13 15" (no quotes) to regress these steps to derive the diffusion kinetics.
-4. Watch the model run, out of the box it comes set up to attempt to fit the observed data with 2, 3, 4, 6, and 9 domains respectively. This will take 10 minutes or so to run. At the end, you will have a 4 panel plot window appear summarizing the results of the model run.
-5. Fire up Final_Results_Plotter.m and set the value of "ndomains" to 6. This will export a pdf with an Arrhenius Plot and Delta (Lovera's r/ro) plot for the 6 domain model run. It will also export a .csv file with all of the modeled and observed data used and produced by the model.
+1. Download and unzip *Domain_inverse_search_v2.3_CURRENT.zip*. The unzipped folder contains all of the necessary scripts that are associated with the inverse model.  
+2. Use one of the example files from our Michigan Hematite samples published in Farley and McKeon 2015 - Geology that are included with the code.
+3. Fire up Domain_Model_MASTER.m and run it as a script!! Hit the green play botton and watch the Command Window for instructions. This is hard wired to start with MI43d2.EXAMPLE.txt -- this is a good place to start.
+4. When prompted for kinetics info, enter "1" (no quotes) to regress steps from the Arrhenius plot, then enter "9 11 13 15" (no quotes) to regress these steps to derive the diffusion kinetics.
+5. Watch the model run, out of the box it comes set up to attempt to fit the observed data with 2, 3, 4, 6, and 9 domains respectively. This will take 10 minutes or so to run. At the end, you will have a 4 panel plot window appear summarizing the results of the model run.
+6. Fire up Final_Results_Plotter.m and set the value of "ndomains" to 6. This will export a pdf with an Arrhenius Plot and Delta (Lovera's r/ro) plot for the 6 domain model run. It will also export a .csv file with all of the modeled and observed data used and produced by the model.
 
 #### HOW THE CODE WORKS
 
