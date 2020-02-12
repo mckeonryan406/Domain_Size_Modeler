@@ -1,8 +1,6 @@
 ## INVERSE DOMAIN SEARCH FOR MDD ANALYSIS
 
-Created By: Ryan McKeon 
-Date: 10 March 2017 
-Contact: [ryan.e.mckeon@dartmouth.edu](mailto:ryan.e.mckeon@dartmouth.edu)
+Created By: Ryan McKeon | Date: 10 March 2017 | Contact: [ryan.e.mckeon@dartmouth.edu](mailto:ryan.e.mckeon@dartmouth.edu)
 
 
 
