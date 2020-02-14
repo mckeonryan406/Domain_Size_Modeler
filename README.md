@@ -32,7 +32,11 @@ to optimize the modeled data with the observed results. The search is optimized 
 
 This search is accomplished in two steps, the first is purely random, where the domains are assigned a random size and proportion of the total gas with no attempt to hone the fit. The section step takes the best fit from the random attempts and hones the size and gas fraction of each domain in a systematic fashion. This code is set up to iterate through attempting to fit the data using a different number of domains and for each specific number of domains it tries multiple times from scratch to fit the data in order to avoid hammering away for a long time on a local minimum of mistfit or BIC score.
 
-This code uses the Bayesian Information Criterion (BIC) (calcualted in master_domain.m) to determine the best fitting model. As indicated above this metric favors simplier models (i.e. fewer domains) and at the conclusion of the code, the output is given for the domain structure that produces the lowest BIC score even if it is visually not as good a fit as other models with more domains. You can plot and export the results for model runs with more domains and a higher BIC (and likely a lower misfit score) by using the Final_Results_Plotter.m script which calls upon Master_Results_Table 3D array that stores all of the output from the model. The format for INPUTS and OUTPUTS are explained next.
+This code uses the Bayesian Information Criterion (BIC) (calcualted in master_domain.m) to determine the best fitting model. As indicated above this metric favors simplier models (i.e. fewer domains) and at the conclusion of the code, the output is given for the domain structure that produces the lowest BIC score even if it is visually not as good a fit as other models with more domains. You can plot and export the results for model runs with more domains and a higher BIC (and likely a lower misfit score) by using the Final_Results_Plotter.m script which calls upon Master_Results_Table 3D array that stores all of the output from the model. The format for INPUTS and OUTPUTS are explained in the next section.  ***Here is an exmaple of the output from the model:***
+
+[](https://github.com/mckeonryan406/Domain_Size_Modeler/blob/master/domain_model_output.png)
+
+
 
 #### Inputs and Outputs:
 
