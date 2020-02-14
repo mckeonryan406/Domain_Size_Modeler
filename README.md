@@ -34,8 +34,9 @@ This search is accomplished in two steps, the first is purely random, where the 
 
 This code uses the Bayesian Information Criterion (BIC) (calcualted in master_domain.m) to determine the best fitting model. As indicated above this metric favors simplier models (i.e. fewer domains) and at the conclusion of the code, the output is given for the domain structure that produces the lowest BIC score even if it is visually not as good a fit as other models with more domains. You can plot and export the results for model runs with more domains and a higher BIC (and likely a lower misfit score) by using the Final_Results_Plotter.m script which calls upon Master_Results_Table 3D array that stores all of the output from the model. The format for INPUTS and OUTPUTS are explained in the next section.  ***Here is an exmaple of the output from the model:***
 
-[](https://github.com/mckeonryan406/Domain_Size_Modeler/blob/master/domain_model_output.png)
+![](https://github.com/mckeonryan406/Domain_Size_Modeler/blob/master/domain_model_output.png)
 
+The first panel (upper left) shows the model fit in RED compared to the observed step heating 3He release data in black for the model run with the lowest BIC score (i.e. the best combination of fewest domains and lowest misfit score). Here the model misses the smallest domains at the start of the 3He release, but fits well with the bulk of the release structure and does so with only 3 domains, hence the low BIC score.  The third panel (lower lower) shows an arrhenius plot with the observed 3He data in black and the kinetics of the modeled diffusion domains in red.  The gray dashed lines are reference domian sizes of 100 nm, 10 um, and 1 mm radius. The right side panels illustrate how the BIC and Misfit scores varied with increased number of domains for this inverse model run. The 3 domain model was chosen as the best result here because of having the lowest BIC score.  
 
 
 #### Inputs and Outputs:
